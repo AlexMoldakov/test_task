@@ -1,0 +1,144 @@
+   .section_ourmission {
+       padding-top: 169px;
+   }
+   
+   .ourmission_header {
+       display: grid;
+       align-items: center;
+       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+       grid-gap: 81px;
+       padding: 0 76px;
+   }
+   
+   .ourmission_card {
+       display: grid;
+       align-items: center;
+       height: 312px;
+       padding: 0 55px;
+       border: 2px solid rgba(255, 255, 255, 0.5);
+       border-radius: 21px;
+   }
+   
+   .ourmission_card_text {
+       font-family: 'Noto Sans';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 24px;
+       line-height: 33px;
+       text-decoration-line: underline;
+   }
+   
+   .ourmission_card_text:hover {
+       cursor: pointer;
+       text-decoration: none;
+   }
+   
+   .section_ourmission_body {
+       display: grid;
+       width: 100%;
+       grid-template-columns: 1fr 1fr;
+       align-items: center;
+       margin-top: 110px;
+   }
+   
+   .ourmission_content {
+       margin-left: -100px;
+   }
+   
+   .ourmission_content_big {
+       width: 850px;
+   }
+   
+   .ourmission_content_mini {
+       display: none;
+   }
+   
+   .section_ourmission_info {
+       max-width: 358px;
+       position: relative;
+       justify-content: center;
+   }
+   
+   .ourmission_info_light {
+       z-index: 0;
+       width: 100%;
+       right: -20px;
+       top: -113px;
+       position: absolute;
+   }
+   
+   .ourmission_title {
+       position: relative;
+       z-index: 1;
+   }
+   
+   .ourmission_text {
+       position: relative;
+       z-index: 1;
+       max-width: 315px;
+   }
+   
+   @media (max-width: 1200px) {
+       .ourmission_content_big {
+           margin-left: -150px;
+       }
+   }
+   
+   @media (max-width: 1024px) {
+       .section_ourmission_info {
+           margin-left: -110px;
+       }
+       .ourmission_info_light {
+           right: 150px;
+       }
+   }
+   
+   @media (max-width: 992px) {
+       .ourmission_content_big {
+           margin-left: -250px;
+       }
+   }
+   
+   @media (max-width: 768px) {
+       .ourmission_header {
+           padding: 0 10px;
+           grid-template-columns: 1fr;
+       }
+       .section_ourmission {
+           padding-top: 70px;
+       }
+       .ourmission_card {
+           padding: 0 10px;
+           height: 185px;
+       }
+       .ourmission_card_text {
+           font-family: 'Noto Sans';
+           font-style: normal;
+           font-weight: 400;
+           font-size: 18px;
+           line-height: 25px;
+           text-decoration-line: underline;
+       }
+       .section_ourmission_body {
+           display: flex;
+           flex-direction: column-reverse;
+       }
+       .ourmission_content {
+           display: grid;
+           justify-content: center;
+           margin-left: -15px;
+       }
+       .section_ourmission_info {
+           margin: 0 auto;
+       }
+       .ourmission_content_mini {
+           display: block;
+           justify-content: center;
+       }
+       .ourmission_content_big {
+           display: none;
+       }
+       .ourmission_text {
+           width: auto;
+       }
+   }

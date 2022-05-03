@@ -1,0 +1,143 @@
+*::before,
+*::after,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+section,
+span,
+input,
+button,
+form,
+p {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    font-size: 16px;
+    color: white;
+    font-family: Noto Sans;
+    background-color: #000000;
+}
+
+.wrapper {
+    background-color: #000000;
+    margin: 0px auto;
+    max-width: 1440px;
+    overflow: hidden;
+    position: relative;
+}
+
+.title {
+    position: relative;
+    z-index: 10;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 62px;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+    padding-top: 24px;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.buttons img {
+    width: 185px;
+    height: 65px;
+}
+
+@media (max-width: 1440px) {
+    .wrapper {
+        max-width: 1400px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 768px;
+    }
+    .title {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .text {
+        font-family: 'Noto Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .buttons {
+        justify-content: center;
+        padding-right: 0px
+    }
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        max-width: 576px;
+    }
+}
+
+@media (max-width: 375px) {
+    .wrapper {
+        max-width: 375px;
+    }
+}

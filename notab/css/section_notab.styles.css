@@ -1,0 +1,38 @@
+.section_notab {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.notab_background {
+    left: 0;
+    top: 0;
+}
+
+.background {
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.notab_content_iphone {
+    position: relative;
+}
+
+.notab_content_screenshot {
+    position: absolute;
+}
+
+.notab_content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 855px) {
+    .section_notab {
+        display: none;
+    }
+}

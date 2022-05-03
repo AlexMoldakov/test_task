@@ -1,0 +1,152 @@
+.section_biTool {
+    display: grid;
+    padding-top: 200px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 186px;
+}
+
+.biTool_info_light {
+    position: absolute;
+    z-index: 0;
+    left: -168px;
+    top: -375px;
+}
+
+.section_biTool_info {
+    position: relative;
+}
+
+.biTool_title {
+    position: relative;
+    z-index: 1;
+    max-width: 497px;
+}
+
+.biTool_text {
+    position: relative;
+    z-index: 1;
+}
+
+.biTool_graphics {
+    position: relative;
+    height: 510px;
+}
+
+.biTool_graphics img {
+    position: absolute;
+}
+
+.grap_blue {
+    top: 230px;
+    right: 500px;
+}
+
+.grap_wave {
+    top: 270px;
+    right: 250px;
+    z-index: 2;
+}
+
+.grap_gray {
+    top: 0;
+    right: 150px;
+}
+
+.grap_column {
+    top: 370px;
+    right: 310px;
+}
+
+.grap_circle {
+    top: 170px;
+    right: 90px;
+}
+
+.grap_load {
+    bottom: 0;
+    right: 0;
+}
+
+.grap_loadBlue {
+    top: 170px;
+    right: 350px;
+}
+
+@media (max-width: 1187px) {
+    .section_biTool {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+    .grap_blue {
+        right: 0;
+        top: 250px;
+    }
+    .grap_wave {
+        top: 75px;
+        right: 170px;
+        z-index: 2;
+    }
+    .grap_gray {
+        top: 350px;
+        left: 0px;
+    }
+    .grap_column {
+        top: 230px;
+        left: 270px;
+    }
+    .grap_circle {
+        top: 0px;
+        right: 0px;
+    }
+    .grap_load {
+        bottom: 0;
+        right: 0;
+    }
+    .grap_loadBlue {
+        top: 230px;
+        left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section_biTool {
+        padding-top: 140px;
+    }
+    .biTool_graphics {
+        height: 200px;
+    }
+    .grap_blue {
+        display: none;
+    }
+    .grap_wave {
+        width: 91px;
+        top: 35px;
+        right: 70px;
+        z-index: 2;
+    }
+    .grap_gray {
+        width: 145px;
+        top: 120px;
+        left: -40px;
+    }
+    .grap_column {
+        width: 91px;
+        top: 95px;
+        left: 120px;
+    }
+    .grap_circle {
+        width: 86px;
+        top: 0px;
+        right: 0px;
+    }
+    .grap_load {
+        width: 296px;
+        top: 190px;
+        right: -100px;
+    }
+    .grap_loadBlue {
+        width: 110px;
+        top: 50px;
+        left: 30px;
+    }
+}

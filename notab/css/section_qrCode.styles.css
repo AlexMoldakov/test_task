@@ -1,0 +1,116 @@
+    .section_qrCode {
+        padding-top: 222px;
+    }
+    
+    .qrCode_background {
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+    
+    .qrCode_background_image_dj {
+        width: 50%;
+    }
+    
+    .qrCode_background_image_coct {
+        right: 0;
+        width: 50%;
+    }
+    
+    .qrCode_background_blure {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .qrCode_background_image_label {
+        right: 100px;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .qrCode_body {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: -500px;
+    }
+    
+    .qrCode_content {
+        padding: 80px;
+        margin-bottom: 400px;
+    }
+    
+    .qrCode_content_order {
+        margin-top: 300px;
+    }
+    
+    .qrCode_info {
+        max-width: 425px;
+    }
+    
+    .info_buttons {
+        padding-top: 58px;
+    }
+    
+    .qrCode_body_img {
+        margin-left: 100px;
+        position: relative;
+    }
+    
+    .qrCode_info_image_coct {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    
+    .qrCode_info_image_label {
+        position: absolute;
+        width: 30%;
+        left: -10%;
+        top: 35%;
+    }
+    
+    @media (max-width: 1250px) {
+        .qrCode_content {
+            padding: 80px;
+            margin-bottom: 0px;
+        }
+        .qrCode_content_order {
+            margin-top: 0px;
+        }
+    }
+    
+    @media (max-width: 1200px) {
+        .qrCode_body {
+            margin-top: -150px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .qrCode_background_image_dj {
+            width: 100%;
+        }
+        .qrCode_background_image_coct {
+            display: none;
+        }
+        .qrCode_background_image_label {
+            display: none;
+        }
+        .qrCode_content {
+            padding: 50px;
+            z-index: 1;
+            margin-top: -150px;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .qrCode_body_img {
+            display: none;
+        }
+    }

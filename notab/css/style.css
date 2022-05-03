@@ -1,0 +1,17 @@
+.section {
+    padding: 0 100px;
+}
+
+@media (max-width: 992px) {
+    .section {
+        padding: 0 50px;
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 0 15px;
+        max-width: 768px;
+    }
+}

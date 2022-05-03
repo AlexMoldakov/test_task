@@ -1,0 +1,55 @@
+.scanner_background {
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.scanner_background img {
+    width: 100%;
+}
+
+.background_blur {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.scanner_body {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: -350px;
+    gap: 24px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.scanner_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.scanner_text {
+    max-width: 316px;
+}
+
+@media (max-width: 1255px) {
+    .scanner_body {
+        margin-top: -150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scanner_body {
+        margin-top: -50px;
+    }
+    .scanner_content {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,111 @@
+.form_info {
+    position: relative;
+    display: grid;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 580px;
+}
+
+.from_info_img {
+    z-index: 0;
+    position: absolute;
+    top: -250%;
+    left: -80%;
+}
+
+.form {
+    position: relative;
+    display: grid;
+    grid-gap: 23px;
+    max-width: 808px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-top: 82px;
+    margin: 0 auto;
+}
+
+.from_body_two {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+    grid-gap: 24px;
+}
+
+.form_img {
+    position: absolute;
+    right: -70%;
+    bottom: -20%;
+}
+
+.form_field {
+    height: 83px;
+    border: 1px solid;
+    border-color: #5C5C5C;
+    border-radius: 10px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 23px;
+}
+
+.input_error {
+    border-color: red;
+    border-width: 2px;
+}
+
+.footer_form_button {
+    grid-template-columns: repeat(auto-fill, minmax(345px, 398px));
+    Height: 80px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    max-width: 398px;
+    min-width: 345px;
+    margin: 60px auto;
+}
+
+.form_footer {
+    padding-top: 60px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form_footer_download {
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    padding-bottom: 30px;
+}
+
+.form_download_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_footer {
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .from_body_two {
+        grid-template-columns: 1fr;
+    }
+    .form {
+        padding-top: 49px;
+    }
+}
